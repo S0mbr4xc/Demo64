@@ -8,6 +8,7 @@ import { DivisionComponent } from './components/division/division.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 
 const routes: Routes = [
+  {path: "", redirectTo: "components/inicio", pathMatch: "full"},
   {path: "components/inicio", component: InicioComponent},
   {path: "components/suma", component: SumaComponent},
   {path: "components/resta", component: RestaComponent},

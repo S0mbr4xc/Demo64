@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./acercade.component.css']
 })
 export class AcercadeComponent {
-  msg: string = 'nuevo'
+  msg: string = ''
 
   messages: string[] = []
 
@@ -22,7 +22,7 @@ export class AcercadeComponent {
   ngOnInit(){
     this.messages = this.contactosService.get()
   }
-
+  
   agregar(){
     this.contactosService.add(this.msg)
   }

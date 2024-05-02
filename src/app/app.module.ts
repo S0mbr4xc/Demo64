@@ -16,7 +16,6 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    InicioComponent,
     SumaComponent,
     RestaComponent,
     MultiplicacionComponent,

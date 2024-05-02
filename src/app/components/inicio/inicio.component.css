@@ -1,0 +1,62 @@
+/* Estilos generales para la calculadora */
+
+
+/* Estilos para centrar el contenedor de la calculadora en el componente */
+.calculadora-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+form[name="calculadora"] {
+  width: 225px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para la pantalla de la calculadora */
+input.pantalla {
+  width: calc(100% - 20px); /* 100% del ancho del formulario menos el padding */
+  height: 40px; /* Altura de la pantalla */
+  margin-bottom: 10px; /* Espacio debajo de la pantalla */
+  text-align: right; /* Alineación del texto a la derecha */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 5px; /* Bordes redondeados para la pantalla */
+  padding: 5px 10px; /* Espaciado interno */
+  font-size: 18px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo para los botones */
+input.numero {
+  width: 45px; /* Ancho de los botones */
+  height: 45px; /* Altura de los botones */
+  margin: 5px; /* Margen alrededor de los botones */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados para los botones */
+  background-color: #fff; /* Color de fondo blanco */
+  color: #333; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cursor tipo puntero para indicar que es clickeable */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra para los botones */
+}
+
+/* Estilo para botones al ser presionados (interacción) */
+input.numero:active {
+  box-shadow: none; /* Eliminar sombra cuando el botón está presionado */
+  position: relative;
+  top: 2px; /* Mover el botón ligeramente hacia abajo para efecto de presión */
+}
+
+.numeroC{
+  width: 45px; /* Ancho de los botones */
+  height: 45px; /* Altura de los botones */
+  margin: 5px; /* Margen alrededor de los botones */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados para los botones */
+  background-color: #f44336; /* Color de fondo rojo para el botón de reseteo */
+  color: #fff; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cursor tipo puntero para indicar que es clickeable */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* Sombra para los botones */
+}
