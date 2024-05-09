@@ -1,0 +1,12 @@
+<p>post works!</p>
+
+<ul *ngFor="let msg of post.slice(0,6)">
+  <li (click)="mostrarInfo(msg)">{{msg.title}}</li>
+  
+  <div class="Comentarios"  id="info-{{msg.id}}" style="display: none;">
+    <ul *ngFor="let cum of comments">
+      <li *ngIf="cum.postId == msg.id">{{cum.body}}</li>
+    </ul>
+  </div>
+
+</ul>
