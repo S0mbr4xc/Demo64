@@ -1,4 +1,13 @@
 {
+  "targets": {
+    "pw64-b5094": {
+      "hosting": {
+        "demo64": [
+          "pw64-b5094"
+        ]
+      }
+    }
+  },
   "projects": {
     "default": "pw64-b5094"
   }

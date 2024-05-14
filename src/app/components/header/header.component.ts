@@ -16,7 +16,8 @@ export class HeaderComponent {
     {titulo: "Multiplicacion", path: "components/multiplicacion"},
     {titulo: "Division", path: "components/division"},
     {titulo: "Acerca de", path: "components/acercade"},
-    {titulo: "Post", path: "components/post"}
+    {titulo: "Post", path: "components/post"},
+    {titulo: "Mensajes", path: "components/mensajes"}
   ]
 
   tiempoConexion: string = ''

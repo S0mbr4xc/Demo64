@@ -1,35 +1,35 @@
-<p>inicio works!</p>
 
-<div class="calculadora-contenedor">
-  <form name="calculadora">
-    <input class="pantalla" type="textfield" name="show" value="" autocomplete="off" readonly [(ngModel)]="ans">
-  
-    <div>
-      <input class="numero" type="button" value="7" (click)="appendToDisplay('7')">
-      <input class="numero" type="button" value="8" (click)="appendToDisplay('8')">
-      <input class="numero" type="button" value="9" (click)="appendToDisplay('9')">
-      <input class="numero" type="button" value="+" (click)="appendToDisplay('+')">
-      <br>
-      <input class="numero" type="button" value="4" (click)="appendToDisplay('4')">
-      <input class="numero" type="button" value="5" (click)="appendToDisplay('5')">
-      <input class="numero" type="button" value="6" (click)="appendToDisplay('6')">
-      <input class="numero" type="button" value="-" (click)="appendToDisplay('-')">
-      <br>
-      <input class="numero" type="button" value="1" (click)="appendToDisplay('1')">
-      <input class="numero" type="button" value="2" (click)="appendToDisplay('2')">
-      <input class="numero" type="button" value="3" (click)="appendToDisplay('3')">
-      <input class="numero" type="button" value="*" (click)="appendToDisplay('*')">
-      <br>
-      <input class="numeroC" type="button" value="C" (click)="clear()">
-      <input class="numero" type="button" value="0" (click)="appendToDisplay('0')">
-      <input class="numero" type="button" value="=" (click)="calculateAndAdd()">
-      <input class="numero" type="button" value="/" (click)="appendToDisplay('/')">
-    </div>    
-  </form>
+<div class="calculadora-historial-contenedor">
+  <div class="calculadora-contenedor">
+    <form name="calculadora">
+      <input class="pantalla" type="textfield" name="show" value="" autocomplete="off" readonly [(ngModel)]="ans">
+      <div>
+        <input class="numero" type="button" value="7" (click)="appendToDisplay('7')">
+        <input class="numero" type="button" value="8" (click)="appendToDisplay('8')">
+        <input class="numero" type="button" value="9" (click)="appendToDisplay('9')">
+        <input class="numero" type="button" value="+" (click)="appendToDisplay('+')">
+        <br>
+        <input class="numero" type="button" value="4" (click)="appendToDisplay('4')">
+        <input class="numero" type="button" value="5" (click)="appendToDisplay('5')">
+        <input class="numero" type="button" value="6" (click)="appendToDisplay('6')">
+        <input class="numero" type="button" value="-" (click)="appendToDisplay('-')">
+        <br>
+        <input class="numero" type="button" value="1" (click)="appendToDisplay('1')">
+        <input class="numero" type="button" value="2" (click)="appendToDisplay('2')">
+        <input class="numero" type="button" value="3" (click)="appendToDisplay('3')">
+        <input class="numero" type="button" value="*" (click)="appendToDisplay('*')">
+        <br>
+        <input class="numeroC" type="button" value="C" (click)="clear()">
+        <input class="numero" type="button" value="0" (click)="appendToDisplay('0')">
+        <input class="numero" type="button" value="=" (click)="calculateAndAdd()">
+        <input class="numero" type="button" value="/" (click)="appendToDisplay('/')">
+      </div>    
+    </form>
+  </div>
+  <div class="historial-contenedor">
+    <h1>Historial</h1>
+    <ul class="historial-lista">
+      <li *ngFor="let respuesta of historial">{{respuesta}}</li>
+    </ul>
+  </div>
 </div>
-
-<h1>Historial</h1>
-
-<ul *ngFor="let respuesta of historial">
-  <li>{{respuesta}}</li>
-</ul>

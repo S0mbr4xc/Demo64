@@ -1,14 +1,16 @@
-<h1>Practica PW64</h1>
-Conectado <strong>{{usuario}} </strong>{{tiempoConexion}}
+<header>
+  <h1>Practica PW64</h1>
+  Conectado <strong>{{usuario}} </strong>{{tiempoConexion}}
 
-<app-sesion [intervalo]="1" (tiempo)="actualizar($event)" #tiempoSesion></app-sesion>
+  <app-sesion [intervalo]="1" (tiempo)="actualizar($event)" #tiempoSesion></app-sesion>
 
-<button (click)="tiempoSesion.reset()">Reset</button>
-<button (click)="nuevoIntervalo(1)">1</button>
-<button (click)="nuevoIntervalo(3)">3</button>
-<button (click)="nuevoIntervalo(5)">5</button>
-<nav>
-  <div *ngFor="let link of paginas">
-    <a href="#" [routerLink]="link.path"><button class="boton">{{link.titulo}}</button></a>
-  </div>
-</nav>
+  <button (click)="tiempoSesion.reset()">Reset</button>
+  <button (click)="nuevoIntervalo(1)">1</button>
+  <button (click)="nuevoIntervalo(3)">3</button>
+  <button (click)="nuevoIntervalo(5)">5</button>
+  <nav>
+    <div *ngFor="let link of paginas">
+      <a href="#" [routerLink]="link.path"><button class="boton">{{link.titulo}}</button></a>
+    </div>
+  </nav>
+</header>
