@@ -11,6 +11,8 @@ import { MultiplicacionComponent } from './components/multiplicacion/multiplicac
 import { DivisionComponent } from './components/division/division.component';
 import { SesionComponent } from './components/sesion/sesion.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
+import { PostComponent } from './components/post/post.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
