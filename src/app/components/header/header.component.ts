@@ -15,9 +15,13 @@ export class HeaderComponent {
     {titulo: "Resta", path: "components/resta"},
     {titulo: "Multiplicacion", path: "components/multiplicacion"},
     {titulo: "Division", path: "components/division"},
+<<<<<<< HEAD
     {titulo: "Acerca de", path: "components/acercade"},
     {titulo: "Post", path: "components/post"},
     {titulo: "Mensajes", path: "components/mensajes"}
+=======
+    {titulo: "Acerca de", path: "components/acercade"}
+>>>>>>> parent of c02a9d3 (Hosting y servicios de apis)
   ]
 
   tiempoConexion: string = ''
@@ -26,7 +30,7 @@ export class HeaderComponent {
   @ViewChild('tiempoSesion') tiempoSesion!: SesionComponent;
   
   actualizar(segundos: number){
-    this.tiempoConexion = 'Conectado: ' + segundos + ' segundos'
+    this.tiempoConexion = 'Conectado: ' + segundos + 'segundos'
   }
 
   nuevoIntervalo(intervalo: number){
