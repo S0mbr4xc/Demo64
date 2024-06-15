@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "pw69-c97a0"
+  },
+  "targets": {
+    "pw69-c97a0": {
+      "hosting": {
+        "demo64": [
+          "pw69-c97a0"
+        ]
+      }
+    }
   }
 }
